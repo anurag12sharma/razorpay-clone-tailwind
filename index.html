@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <style>
       .companyList {
         animation: 6s infinite linear moveImage;
@@ -1001,7 +1007,7 @@
             src="./images/feature-section1-dottedrows.png"
             alt=""
             loading="lazy"
-            class="absolute w-[233px] left-[300px] -top-[6rem] z-10"
+            class="absolute w-[233px] left-[300px] -top-[3rem] z-10"
           />
           <img
             src="./images/feature-section1-dottedrows.png "
@@ -1405,7 +1411,7 @@
           </button>
 
           <!-- right button -->
-          <button 
+          <button
             class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2 flex justify-center items-center"
           >
             <div
@@ -1419,7 +1425,9 @@
           </button>
 
           <!-- main content -->
-          <div class="flex max-w-[960px] items-center mx-auto my-20 justify-evenly">
+          <div
+            class="flex max-w-[960px] items-center mx-auto my-20 justify-evenly"
+          >
             <!-- guy image -->
             <img
               src="./images/testimonial.jpg"
@@ -1429,13 +1437,26 @@
             />
             <!-- right part -->
             <div class="max-w-[400px]">
-              <img src="./images/quotes.svg" alt="" loading="lazy" class="w-[35px] h-[40px] mb-2"/>
-              <p class="font-mullish text-3xl font-extralight text-deepBlue">Single Flow To Collect And Disburse Payments</p>
+              <img
+                src="./images/quotes.svg"
+                alt=""
+                loading="lazy"
+                class="w-[35px] h-[40px] mb-2"
+              />
+              <p class="font-mullish text-3xl font-extralight text-deepBlue">
+                Single Flow To Collect And Disburse Payments
+              </p>
               <a href="#" class="text-grayText italic underline">Learn More</a>
-              <h3 class="font-mullish font-extrabold text-2xl">Pranay Bhardwaj</h3>
+              <h3 class="font-mullish font-extrabold text-2xl">
+                Pranay Bhardwaj
+              </h3>
               <p class="font-mullish font-medium">Product Manager</p>
-              <img src="./images/slice_icon.png" alt="" loading="lazy" class="w-[120px] 
-              h-[40px]" />
+              <img
+                src="./images/slice_icon.png"
+                alt=""
+                loading="lazy"
+                class="w-[120px] h-[40px]"
+              />
             </div>
           </div>
 
@@ -1451,6 +1472,66 @@
         </div>
       </section>
     </div>
+
+    <!-- final section -->
+    <section
+      class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover min-h-[510px]"
+    >
+      <div
+        class="w-11/12 max-w-[1080px] relative flex items-center justify-center space-x-20 mx-auto pt-16"
+      >
+        <!-- left part -->
+        <div class="flex flex-col gap-5 mt-12">
+          <h2 class="font-mullish font-bold text-2xl text-white">
+            Supercharge your business with Razorpay
+          </h2>
+          <div class="w-6 h-1 bg-greenLight"></div>
+          <p class="font-mullish text-white">
+            Sign up now to experience the future of payments and offer <br />
+            your customers the best checkout experience.
+          </p>
+          <ul class="flex gap-4 flex-wrap mt-6">
+            <li class="font-mullish text-white flex gap-4">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>Quick onboarding</span>
+            </li>
+            <li class="font-mullish text-white flex gap-4">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>Access to entire product suite</span>
+            </li>
+            <li class="font-mullish text-white flex gap-4">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>API access</span>
+            </li>
+            <li class="font-mullish text-white flex gap-4">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>24x7 support</span>
+            </li>
+          </ul>
+          <button
+            class="min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 border flex rounded-sm items-center hover:text-lightBlue500 transitio duration-200 py-3 px-4 gap-2 place-self-start"
+          >
+            Sign Up Now
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-3.5 h-3.5 inline-block mx-1 "
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- right part -->
+        <img src="./images/ctaImg.svg" alt="" class="w-[240px] h-[282px] mt-16" />
+      </div>
+    </section>
 
     <script>
       feather.replace();
